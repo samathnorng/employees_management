@@ -4,7 +4,7 @@ Employee Management System is the 3-Tier web application, which was created for 
 <br>
 
 <p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/tasks_list.png">
+  <img src="https://github.com/samathnorng/employees_management/blob/main/Screenshots/02.PNG">
 </p>
 
 <br>
@@ -15,7 +15,7 @@ Employee Management System is the 3-Tier web application, which was created for 
 + Angular Material UI Component library (mat-table, mat-buttons, mat-dialog, color theme Indigo-pink).
 + Toastr notifications
 
-### Backend: [link to Backend](https://github.com/samathnorng/employees_management/)
+### Backend: [link to Backend](https://github.com/samathnorng/employees_management/tree/main/ems_backend)
 + Spring Boot
 + Spring Data JPA
 + Spring Security
@@ -33,7 +33,7 @@ The app offers two roles of the users: normal user and admin. As app was initial
 <br>
 
 <p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/login_page.png">
+  <img src="https://github.com/samathnorng/employees_management/blob/main/Screenshots/01.PNG">
 </p>
 
 <br>
@@ -43,7 +43,7 @@ Login with bad credentials is impossible, which is indicated by Toastr non-block
 <br>
 
 <p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/login_badcredentials.png">
+  <img src="https://github.com/samathnorng/employees_management/blob/main/Screenshots/03.PNG">
 </p>
 
 <br>
@@ -51,7 +51,7 @@ Login with bad credentials is impossible, which is indicated by Toastr non-block
 App layout consists of sliding side navigation menu, which enables access to different functionality, from which the most important is edit profile and tasks. Edit profile simply allows to change user credentials (first name, last name, email or password). As app uses JWT token to authorize users, every change in credentials is followed by logout from system action and login request, as token is no loger valid.
 
 <p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/edit_profile.png">
+  <img src="https://github.com/samathnorng/employees_management/blob/main/Screenshots/04.PNG">
 </p>
 
 ### User role app functionality
@@ -60,41 +60,11 @@ Task module enables user to see, what tasks are assigned to him by admin and whi
 <br>
 
 <p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/user_tasks.png">
+  <img src="https://github.com/samathnorng/employees_management/blob/main/Screenshots/05.PNG">
 </p>
 
 <br>
 
-User can also sent email to admin using his email client. There is plan to introduce "Vacation" module, where dayoff planing will take place. Dashboard is introduced to give user quick feedback of the tasks status: how many of them are assigned to particular user and what are their status:
-
-<br>
-
-<p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/user_dashboard.png">
-</p>
-
-<br>
-
-### Admin role app functionality
-Admin app functionality is more extended than user. First of all, admin has rights to perform the CRUD operations on employees list (of course CRUD operations of his own profile is not allowed- he has to use edit profile as normal user instead)
-
-<br>
-
-<p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/employee_list.png">
-</p>
-
-<br>
-
-The other admin module is extended task manager:
-
-<br>
-
-<p align="center">
-  <img src="https://github.com/rwedzony/EmployeeManagementSystem_Front/blob/master/src/assets/img/tasks_list.png">
-</p>
-
-<br>
 
 Admin can assign task to employee, edit task, and change task status from "DONE" to "NEW" as well as unassign. As tasks and employees are stored in DB using 1:N relationship, deleting particular empolyee indicates that all of his tasks become automatically unassigned.
 
